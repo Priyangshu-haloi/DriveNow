@@ -1,0 +1,201 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('https://i.ibb.co/RTQp7Gt/car-rent-bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.filters {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filters select,
+.filters input {
+    padding: 0.5rem;
+    flex: 1;
+}
+
+.cars {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.car-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.car-card:hover {
+    transform: scale(1.02);
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.car-card .info {
+    padding: 1rem;
+}
+
+.car-card h3 {
+    margin: 0 0 0.5rem;
+}
+
+.car-card p {
+    margin: 0.25rem 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #1e3a8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #153072;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+section {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about,
+.contact {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
